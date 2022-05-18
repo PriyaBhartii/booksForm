@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <form class="first" action="index.html" method="post">
+      <h1>BOOKS FORM</h1>
+      <label><h3>Customer Name</h3>
+          <input type="text" name="cusname" value="Enter your name">
+        </label><br>
+        <label><h3>Telephone</h3>
+          <input type="tel" name="telephone" value="Pattern: 234-567-8910" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </label>
+        <label><h3>Mail</h3>
+          <input type="email" name="mail" value="Enter your mail address">
+        </label>
+        <label><h3>Quantity</h3>
+          <input type="number" name="quantity" value="Quantity" min='1' max='5'>
+        </label>
+        <label><h3>Books</h3></label>
+        <input list="books" name="book">
+        <datalist id="books">
+          <option value="HTML5-Bruce Lawson and Renny Sharp">
+          <option value="HTML5-Up and Running-Mark Pilgrim">
+          <option value="Head First HTML5 Programming-Eric Freeman">
+          <option value="Mastering HTML,CSS and Javascript-Laura Lemay">
+        </datalist>
+        <br><br>
+        <input class="btn" type="submit" name="submit" value="Submit">
+      </form>
+  </body>
+</html>
